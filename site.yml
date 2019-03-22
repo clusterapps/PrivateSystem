@@ -1,0 +1,8 @@
+- name: Configure ClusterApps EL7 Baseline
+  hosts: centos
+  include_playbook: playbooks/base-centos.yml
+
+- name: Configure Apache HTTPd
+  hosts: apache
+  include_playbook: playbooks/deply-apache.yml
+  

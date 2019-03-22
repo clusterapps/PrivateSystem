@@ -3,5 +3,7 @@
   name: freeipa_client
 - src: clusterapps.httpd
   name: httpd
+- src: bertvv.mariadb
+  name: mariadb  
 - src: clusterapps.rhbase
   name: rhbase  
