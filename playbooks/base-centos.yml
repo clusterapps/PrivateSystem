@@ -1,4 +1,5 @@
 - name: Configure ClusterApps EL7 Baseline
+  hosts: centos
   roles:
     - rhbase
     - ipaclient
