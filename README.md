@@ -21,6 +21,10 @@ There are a lot of dependancies. It is best to use galaxy to insure you have all
 
 Each role has serveral variables that will allow you to deploy for your environment. Review each role you plan to deploy for specific details. 
 
+When running this playbook from the command line, rename the ./inventory/hosts.example to ./inventory/hosts. Configure the variables for your environment. 
+
+When running from AWX or Tower, use inventories and groups to define variables. Review the inventory folder for group lvel variables.
+
 
 ## Things to keep in mind.
 
