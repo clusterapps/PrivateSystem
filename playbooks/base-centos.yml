@@ -2,4 +2,4 @@
   hosts: centos
   roles:
     - rhbase
-    - ipaclient
+    - freeipa_client

@@ -1,3 +1,5 @@
 .DS_Store
 inventory/hosts
 roles/freeipa_client
+roles/rhbase
+roles/httpd
