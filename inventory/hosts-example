@@ -1,4 +1,3 @@
-
 [centos]
 db.ipa.example.com ansible_host=10.10.10.81 ansible_user=centos
 www1.ipa.example.com ansible_host=10.10.10.75 ansible_user=centos
@@ -29,6 +28,12 @@ rhbase_firewall_allow_services='["http","https"]'
 [prod:children]
 centos
 wordpress
+
+[centos:vars]
+rhbase_hosts_entry=true
+rhbase_motd=true
+rhbase_install_packages='["screen","net-tools","tcpdump","rsync"]'
+rhbase_update=true
 
 [prod:vars]
 ansible_user=centos
