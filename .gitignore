@@ -4,3 +4,4 @@ roles/freeipa_client
 roles/rhbase
 roles/httpd
 roles/mariadb
+roles/wordpress

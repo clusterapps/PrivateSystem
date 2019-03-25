@@ -4,6 +4,8 @@
 - src: clusterapps.httpd
   name: httpd
 - src: bertvv.mariadb
-  name: mariadb  
+  name: mariadb
 - src: clusterapps.rhbase
   name: rhbase  
+- src: clusterapps.wordpress
+  name: wordpress

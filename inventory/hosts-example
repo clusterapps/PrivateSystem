@@ -1,0 +1,39 @@
+
+[centos]
+db.ipa.example.com ansible_host=10.10.10.81 ansible_user=centos
+www1.ipa.example.com ansible_host=10.10.10.75 ansible_user=centos
+
+[apache]
+www1.ipa.example.com
+
+[mariadb]
+db.ipa.example.com
+
+[mariadb:vars]
+mariadb_root_password=alsDJDIWvgoadfuh
+rhbase_firewall_allow_services='["mysql"]'
+mariadb_bind_address=0.0.0.0
+mariadb_databases='[{"name": "wordpress"}]'
+mariadb_users='[{"name": "wpuser","password": "SuperAw3s0mePaSSword","priv": "wordpress.*:ALL,GRANT","host": "10.10.10.%"}]'
+
+[wordpress]
+www1.ipa.example.com
+
+[wordpress:vars]
+wordpress_password=SuperAw3s0mePaSSword
+wordpress_admin="%*Qq(B^bGXj(In!UoN"
+wordpress_database_host=10.10.10.81
+wordpress_user=wpuser
+rhbase_firewall_allow_services='["http","https"]'
+
+[prod:children]
+centos
+wordpress
+
+[prod:vars]
+ansible_user=centos
+freeipaclient_domain=corp.example.com
+freeipaclient_enroll_user=automate
+freeipaclient_enroll_pass=someawesomepassword
+freeipaclient_dns_server='["10.10.10.2","10.10.10.3"]'
+freeipaclient_servers='["id1.ipa.example.com","id2.ipa.example.com"]'

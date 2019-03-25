@@ -1,4 +1,4 @@
-- name: Configure ClusterApps EL7 Baseline
+- name: Deploy Apache HTTP
   hosts: apache
   roles:
     - httpd

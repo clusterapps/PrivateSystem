@@ -5,7 +5,7 @@ The Private Data System is very important in the ClusterApps realm of idea. This
 ## How to use this
 
 * Download this repo
-* Copy inventory/hosts.example to inventory/hosts
+* Copy inventory/hosts-example to inventory/hosts
 * Copy secrets.example.yml to secrets.yml
 * Update the group_vars as needed
 * Run the site.yml playbook for a complete system 
@@ -15,7 +15,7 @@ The Private Data System is very important in the ClusterApps realm of idea. This
 
 There are a lot of dependancies. It is best to use galaxy to insure you have all of the requirements.
 
-`ansible-galaxy install -r requirements.yml -p roles`
+`ansible-galaxy install -r roles/requirements.yml -p roles`
 
 ## Major Role Variables
 

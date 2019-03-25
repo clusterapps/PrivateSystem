@@ -1,0 +1,4 @@
+- name: Deploy WordPress
+  hosts: wordpress
+  roles:
+    - wordpress

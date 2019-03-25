@@ -1,0 +1,4 @@
+- name: Deploy MariaDB
+  hosts: mariadb
+  roles:
+    - mariadb
