@@ -5,6 +5,10 @@ www1.ipa.example.com ansible_host=10.10.10.75 ansible_user=centos
 [apache]
 www1.ipa.example.com
 
+[apache:vars]
+rhbase_firewall_allow_services='["http","https"]'
+
+
 [mariadb]
 db.ipa.example.com
 
@@ -23,7 +27,6 @@ wordpress_password=SuperAw3s0mePaSSword
 wordpress_admin="%*Qq(B^bGXj(In!UoN"
 wordpress_database_host=10.10.10.81
 wordpress_user=wpuser
-rhbase_firewall_allow_services='["http","https"]'
 
 [prod:children]
 centos
