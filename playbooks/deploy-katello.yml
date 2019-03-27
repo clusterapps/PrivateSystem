@@ -1,5 +1,5 @@
 ---
 - hosts:
-  - katello.corp.clusterapps.com
+  - katello
   roles:
-    - role: sean797.foreman_installer
+    - role: foreman_installer
