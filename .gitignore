@@ -5,3 +5,4 @@ roles/rhbase
 roles/httpd
 roles/mariadb
 roles/wordpress
+roles/foreman_installer

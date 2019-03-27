@@ -9,3 +9,5 @@
   name: rhbase  
 - src: clusterapps.wordpress
   name: wordpress
+- src: sean797.foreman_installer
+  name: foreman_installer  
