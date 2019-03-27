@@ -1,4 +1,11 @@
 ---
+- name: Install | Foreman dependencies
+  hosts: katello
+  package:
+    name: "{{ item }}"
+    state: installed
+  with_items: "{{ katello_dependencies }}"
+
 - hosts:
   - katello
   roles:
