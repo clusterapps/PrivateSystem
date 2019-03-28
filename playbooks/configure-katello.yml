@@ -1,0 +1,4 @@
+- name: Deploy Katello
+  hosts: katello
+  roles:
+    - foreman_config

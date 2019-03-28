@@ -1,8 +1,11 @@
 .DS_Store
+inventory/group_vars
 inventory/hosts
 roles/freeipa_client
 roles/rhbase
 roles/httpd
 roles/mariadb
 roles/wordpress
-roles/foreman_installer
+roles/foreman*
+
+
