@@ -1,0 +1,4 @@
+- name: Deploy FreeIPA Replicas
+  hosts: freeipa-replca
+  roles:
+    - freeipa_server

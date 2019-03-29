@@ -2,6 +2,7 @@
 inventory/group_vars
 inventory/hosts
 roles/freeipa_client
+roles/freeipa_server
 roles/rhbase
 roles/httpd
 roles/mariadb

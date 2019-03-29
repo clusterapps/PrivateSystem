@@ -11,3 +11,5 @@
   name: wordpress
 - src: sean797.foreman_installer
   name: foreman_installer  
+- src: clusterapps.freeipa_server
+  name: freeipa_server
