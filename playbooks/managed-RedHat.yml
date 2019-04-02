@@ -1,4 +1,5 @@
 - name: Configure ClusterApps EL7 Managed System
   hosts: centos
   roles:
+    - rhbase
     - freeipa_client
