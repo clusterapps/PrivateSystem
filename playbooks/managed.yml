@@ -1,0 +1,4 @@
+- name: Configure ClusterApps EL7 Managed System
+  hosts: centos
+  roles:
+    - freeipa_client
