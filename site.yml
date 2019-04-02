@@ -1,5 +1,4 @@
 ---
-- import_playbook: ./playbooks/base-centos.yml
 - import_playbook: ./playbooks/deploy-apache.yml
 - import_playbook: ./playbooks/deploy-mariadb.yml
 - import_playbook: ./playbooks/deploy-wordpress.yml
