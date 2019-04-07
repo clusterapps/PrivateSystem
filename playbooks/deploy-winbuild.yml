@@ -1,0 +1,5 @@
+- name: Configure ClusterApps Windows Build Server 
+  hosts: windows
+  roles:
+    - win_build
+    - win_updates

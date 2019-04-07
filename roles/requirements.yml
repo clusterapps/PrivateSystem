@@ -13,3 +13,8 @@
   name: foreman_installer  
 - src: clusterapps.freeipa_server
   name: freeipa_server
+- src: mrlesmithjr.windows-updates
+  name: win_updates
+- src: arillso.chocolatey
+  name: win_choco
+
