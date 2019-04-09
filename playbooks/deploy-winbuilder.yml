@@ -1,5 +1,4 @@
 - name: Configure ClusterApps Windows Build Server 
-  hosts: windows
+  hosts: winbuilder
   roles:
-    - win_build
-    - win_updates
+    - win_builder
