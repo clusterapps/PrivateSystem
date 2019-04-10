@@ -1,0 +1,4 @@
+---
+- import_playbook: ./playbooks/managed-node.yml
+- import_playbook: ./servers.yml
+- import_playbook: ./services.yml
