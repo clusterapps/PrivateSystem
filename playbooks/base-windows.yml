@@ -1,10 +1,7 @@
 - name: Configure ClusterApps Windows Server Baseline
   hosts: windows
   vars:
-    - windows_updates_reboot: false
-    - windows_desktop_packages_version: []
-    - windows_desktop_packages_latest: []
+    - windows_updates_reboot: true
   roles:
     - win_updates
     - win_choco
-    - win_packages
