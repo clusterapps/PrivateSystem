@@ -17,4 +17,11 @@
   name: win_updates
 - src: arillso.chocolatey
   name: win_choco
+- src: ovirt.repositories
+- src: ovirt.engine-setup
+- src: ovirt.infra
+- src: ovirt.manageiq
+- src: ovirt.image-template
+- src: ovirt.vm-infra
+- src: ovirt.remote_db
 

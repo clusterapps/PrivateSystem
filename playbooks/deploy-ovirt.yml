@@ -1,0 +1,14 @@
+- name: Check oVirt Repo settings
+  hosts: ovirt
+  roles:
+    - ovirt.repositories
+
+- name: Configure oVirt Database
+  hosts: ovirt-db
+  roles:
+    - ovirt.remote_db
+
+- name: Configure oVirt Engine
+  hosts: ovirt-engine
+  roles:
+    - ovirt.infra

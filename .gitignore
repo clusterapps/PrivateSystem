@@ -9,5 +9,7 @@ roles/mariadb
 roles/wordpress
 roles/foreman*
 roles/win_*
+roles/oVirt_*
+roles/ovirt*
 keys
 
