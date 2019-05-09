@@ -28,9 +28,21 @@ wordpress_admin="%*Qq(B^bGXj(In!UoN"
 wordpress_database_host=10.10.10.81
 wordpress_user=wpuser
 
+[ovirt-engine]
+ovirt1.ipa.example.com
+
+[ovirt-db]
+ovirt1.ipa.example.com
+
+
+[ovirt:children]
+ovirt-engine
+ovirt-db
+
 [prod:children]
 centos
 wordpress
+ovirt
 
 [centos:vars]
 rhbase_hosts_entry=true
