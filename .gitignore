@@ -11,5 +11,8 @@ roles/foreman*
 roles/win_*
 roles/oVirt_*
 roles/ovirt*
+roles/dock*
+roles/kube*
+roles/nfs
 keys
 

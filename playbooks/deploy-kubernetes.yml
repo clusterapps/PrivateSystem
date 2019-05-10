@@ -1,0 +1,17 @@
+- name: Deploy Kubernetes Master
+  hosts: k8s-master
+  roles:
+    - rhbase
+    - freeipa_client
+    - docker
+    - kubernetes
+
+- name: Deploy Kubernetes Nodes
+  hosts: k8s-node
+  vars:
+    - kubernetes_role: "node"
+  roles:
+    - rhbase
+    - freeipa_client
+    - docker
+    - kubernetes    

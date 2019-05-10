@@ -24,4 +24,11 @@
 - src: ovirt.image-template
 - src: ovirt.vm-infra
 - src: ovirt.remote_db
+- src: geerlingguy.docker
+  name: docker
+- src: geerlingguy.kubernetes
+  name: kubernetes
+- src: geerlingguy.nfs
+  name: nfs
+
 
