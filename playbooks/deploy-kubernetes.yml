@@ -2,7 +2,6 @@
   hosts: k8s-master
   roles:
     - rhbase
-    - freeipa_client
     - docker
     - kubernetes
 
@@ -12,6 +11,5 @@
     - kubernetes_role: "node"
   roles:
     - rhbase
-    - freeipa_client
     - docker
     - kubernetes    
