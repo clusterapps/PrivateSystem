@@ -1,7 +1,17 @@
+- name: Install | Foreman dependencies
+  hosts: kubernetes
+  tasks:
+    - name: Disable firewalld
+      service:
+        name: firewalld
+        enabled: false
+        state: stopped
+
 - name: Deploy Kubernetes Master
   hosts: k8s-master
   roles:
     - rhbase
+    - pip
     - docker
     - kubernetes
 
@@ -11,5 +21,6 @@
     - kubernetes_role: "node"
   roles:
     - rhbase
+    - pip
     - docker
     - kubernetes    
