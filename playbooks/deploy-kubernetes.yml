@@ -1,4 +1,4 @@
-- name: Install | Foreman dependencies
+- name: Install | Kubernetes dependencies
   hosts: kubernetes
   tasks:
     - name: Disable firewalld
@@ -6,13 +6,22 @@
         name: firewalld
         enabled: false
         state: stopped
-
-- name: Deploy Kubernetes Master
-  hosts: k8s-master
   roles:
     - rhbase
     - pip
     - docker
+
+- name: Reboot to set SELinux and firewalld
+  hosts: kubernetes
+  tasks:
+    - name: Unconditionally reboot the machine with new defaults
+      reboot:
+
+- name: Deploy Kubernetes Master
+  hosts: k8s-master
+  vars:
+    - kubernetes_role: "master"
+  roles:
     - kubernetes
 
 - name: Deploy Kubernetes Nodes
@@ -20,7 +29,4 @@
   vars:
     - kubernetes_role: "node"
   roles:
-    - rhbase
-    - pip
-    - docker
     - kubernetes    

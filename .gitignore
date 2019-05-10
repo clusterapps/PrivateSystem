@@ -14,5 +14,6 @@ roles/ovirt*
 roles/dock*
 roles/kube*
 roles/nfs
+roles/pip
 keys
 

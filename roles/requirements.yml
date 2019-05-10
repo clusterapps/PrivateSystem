@@ -30,5 +30,7 @@
   name: kubernetes
 - src: geerlingguy.nfs
   name: nfs
+- src: geerlingguy.nfs
+  name: pip
 
 
