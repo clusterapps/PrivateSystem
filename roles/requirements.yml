@@ -32,5 +32,6 @@
   name: nfs
 - src: geerlingguy.pip
   name: pip
-
+- src: geerlingguy.repo-epel
+  name: epel
 

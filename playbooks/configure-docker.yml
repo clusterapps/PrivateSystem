@@ -1,5 +1,6 @@
 - name: Configure Docker Nodes
   hosts: docker
   roles:
+    - epel
     - pip
     - docker

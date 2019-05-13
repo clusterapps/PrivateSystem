@@ -15,5 +15,6 @@ roles/dock*
 roles/kube*
 roles/nfs
 roles/pip
+roles/epel
 keys
 
