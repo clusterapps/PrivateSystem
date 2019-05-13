@@ -24,13 +24,13 @@
 - src: ovirt.image-template
 - src: ovirt.vm-infra
 - src: ovirt.remote_db
-- src: geerlingguy.docker
+- src: openmicroscopy.docker
   name: docker
 - src: geerlingguy.kubernetes
   name: kubernetes
 - src: geerlingguy.nfs
   name: nfs
-- src: geerlingguy.nfs
+- src: geerlingguy.pip
   name: pip
 
 
