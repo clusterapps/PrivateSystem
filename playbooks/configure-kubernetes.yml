@@ -1,16 +1,4 @@
-- name: Install | Kubernetes dependencies
-  hosts: kubernetes
-  tasks:
-    - name: Disable firewalld
-      service:
-        name: firewalld
-        enabled: false
-        state: stopped
-  roles:
-    - rhbase
-    - pip
-    - docker
-
+---
 - name: Reboot to set SELinux and firewalld
   hosts: kubernetes
   tasks:
