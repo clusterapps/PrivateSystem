@@ -3,4 +3,5 @@
   roles:
     - epel
     - pip
+    - docker-tools
     - docker
