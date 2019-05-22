@@ -34,5 +34,5 @@
   name: pip
 - src: geerlingguy.repo-epel
   name: epel
-- src: openmicroscopy.docker-tools
-  name:  docker-tools
+- src: andrewrothstein.docker-tools
+  name:  docker-compose
