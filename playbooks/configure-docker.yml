@@ -1,6 +1,7 @@
 - name: Configure Docker Nodes
   hosts: docker
   roles:
+    - rhbase  
     - epel
     - pip
     - docker-compose
