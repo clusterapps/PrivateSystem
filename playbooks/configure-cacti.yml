@@ -1,0 +1,4 @@
+- name: Configure Cacti
+  hosts: cacti
+  roles:
+    - cacti
