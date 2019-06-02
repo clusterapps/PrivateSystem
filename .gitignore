@@ -16,5 +16,7 @@ roles/kube*
 roles/nfs
 roles/pip
 roles/epel
+roles/cacti
+roles/andrewrothstein.*
 keys
 

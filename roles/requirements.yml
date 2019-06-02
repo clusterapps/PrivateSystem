@@ -36,3 +36,5 @@
   name: epel
 - src: andrewrothstein.docker-compose
   name:  docker-compose
+- src: windtook.ansible_role_cacti
+  name: cacti
