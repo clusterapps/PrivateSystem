@@ -1,6 +1,6 @@
 ## What is this?
 
-The Private Data System is very important in the ClusterApps realm of idea. This is the playbook that uses all of the roles in to deploy a complete system. You will be able to pick and choose the software deployments and identity management. 
+The Private Data System is central to the ClusterApps realm of ideas. This is the playbook that uses all of the roles in to deploy a complete system. You will be able to pick and choose the software deployments and identity management. 
 
 ## How to use this
 
