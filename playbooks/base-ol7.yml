@@ -1,0 +1,4 @@
+- name: Configure Oracle Linux 7 Baseline
+  hosts: oracle
+  roles:
+    - rhbase
