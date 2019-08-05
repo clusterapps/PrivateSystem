@@ -1,0 +1,3 @@
+---
+- import_playbook: ./playbooks/base-centos.yml
+- import_playbook: ./playbooks/base-oracle.yml
